@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary" />
+
+        <View
+            android:background="@drawable/wave"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <EditText
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/round_vien"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="16dp"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:padding="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_vien"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp" />
+        <Button
+            android:id="@+id/login"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_bg"
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/forgotpass"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:text="Forgot password?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center"
+            android:text="OR"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <ImageView
+                android:src="@drawable/fb"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:src="@drawable/google"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/signup"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:text="New User? Register Now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="32dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:text="Already have an Account?"
+        android:textSize="30sp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/person" />
+
+
+</RelativeLayout>
